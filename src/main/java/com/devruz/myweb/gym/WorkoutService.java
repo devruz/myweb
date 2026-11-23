@@ -59,4 +59,16 @@ public class WorkoutService {
         workouts.add(new Workout("Standing calf raises", MuscleGroup.CALVES, 5, 12, 40.0));
 
     }
+    public List<Workout> getAll(){
+        return workouts;
+    }
+    public List<Workout> getByMuscle(MuscleGroup muscleGroup){
+        List<Workout> result = new ArrayList<>();
+        for(Workout w : workouts){
+            if(w.getMuscleGroup().equals(muscleGroup)){
+                result.add(w);
+            }
+        }
+        return result;
+    }
 }
