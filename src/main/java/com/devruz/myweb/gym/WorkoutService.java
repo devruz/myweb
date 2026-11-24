@@ -14,7 +14,7 @@ public class WorkoutService {
         workouts.add(new Workout("Lever inc chest press", MuscleGroup.CHEST, 3, 12, 30.0));
         workouts.add(new Workout("Cable crossover", MuscleGroup.CHEST, 3, 12, 15.0));
         workouts.add(new Workout("Smith mac inc press", MuscleGroup.CHEST, 3, 12, 40.0));
-        workouts.add(new Workout("Peck dec fly", MuscleGroup.CHEST, 3, 12, 30.0));
+        workouts.add(new Workout("Pec deck fly", MuscleGroup.CHEST, 3, 12, 30.0));
         workouts.add(new Workout("Decline dumbbell press", MuscleGroup.CHEST, 3, 12, 15.0));
 
         workouts.add(new Workout("Seated dumbbell press", MuscleGroup.SHOULDERS, 3, 12, 15.0));
@@ -50,10 +50,10 @@ public class WorkoutService {
         workouts.add(new Workout("Deadlift", MuscleGroup.GLUTES, 3, 12, 80.0));
         workouts.add(new Workout("Deficit reverse lunges", MuscleGroup.GLUTES, 3, 12, 15.0));
 
-        workouts.add(new Workout("Leg press", MuscleGroup.HAMSTRINGS, 3, 12, 120.0));
-        workouts.add(new Workout("Leg extensions", MuscleGroup.HAMSTRINGS, 3, 12, 40.0));
-        workouts.add(new Workout("Hamstring curls", MuscleGroup.HAMSTRINGS, 3, 12, 40.0));
-        workouts.add(new Workout("One leg squat", MuscleGroup.HAMSTRINGS, 3, 12, 40.0));
+        workouts.add(new Workout("Leg press", MuscleGroup.QUADRICEPS, 3, 12, 120.0));
+        workouts.add(new Workout("Leg extensions", MuscleGroup.QUADRICEPS, 3, 12, 40.0));
+        workouts.add(new Workout("Hamstrings", MuscleGroup.HAMSTRINGS, 3, 12, 40.0));
+        workouts.add(new Workout("One leg squat", MuscleGroup.QUADRICEPS, 3, 12, 40.0));
 
         workouts.add(new Workout("Seated calf raises", MuscleGroup.CALVES, 3, 12, 40.0));
         workouts.add(new Workout("Standing calf raises", MuscleGroup.CALVES, 5, 12, 40.0));
