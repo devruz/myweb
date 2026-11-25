@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym</title>
+</head>
+<body>
+<h1>My workouts</h1>
+
+<div th:each="entry : ${byMuscle}">
+    <h2 th:text="${entry.key}"></h2>
+    <table border="1">
+        <tr>
+            <th>Exercise</th><th>Sets</th><th>Reps</th><th>Weight (kg)</th>
+        </tr>
+        <tr th:each="w : ${entry.value}">
+            <td th:text="${w.exercise}"></td>
+            <td th:text="${w.sets}"></td>
+            <td th:text="${w.reps}"></td>
+            <td th:text="${w.weightKg}"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
